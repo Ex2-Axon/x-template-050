@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: var(--color-yellow-400);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black font-sans antialiased;
+  }
+}
+
+@layer components {
+  .brutal-card {
+    @apply bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .brutal-btn {
+    @apply bg-yellow-400 border-4 border-black px-8 py-4 font-black uppercase tracking-tighter shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all;
+  }
+
+  .brutal-input {
+    @apply border-4 border-black px-4 py-3 bg-white focus:outline-none focus:bg-yellow-50 font-bold;
+  }
+}
